@@ -3,7 +3,7 @@
 
 Code developped for a white paper published on our Wiki.
 
-Full information about the RNASeq hands-on training can be found on our <a href="http://wiki.bits.vib.be" target="_blank">BITS WIKI</a> in the dedicated pages starting at <a href="http://wiki.bits.vib.be/index.php/Compare_Popular_Read_Mappers" target="_blank">Compare_Popular_Read_Mappers</a>
+Full information about this report can be found on our <a href="http://wiki.bits.vib.be" target="_blank">BITS WIKI</a> in the dedicated pages starting at <a href="http://wiki.bits.vib.be/index.php/Compare_Popular_Read_Mappers" target="_blank">Compare_Popular_Read_Mappers</a>
 
 The code posted here will be maintained and might be different from that cointained in the virtualbox image used during the training.
 
