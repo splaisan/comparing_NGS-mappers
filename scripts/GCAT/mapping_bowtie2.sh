@@ -66,6 +66,8 @@ cmd="bowtie2 \
 	-1 ${fq1} \
 	-2 ${fq2} \
 	--phred33 \
+	-I 450 \
+	-X 550 \
 	--sensitive \
 	--sensitive-local \
 	-p ${nthr} \

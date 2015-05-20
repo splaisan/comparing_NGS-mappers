@@ -4,8 +4,10 @@
 # last edit: 2015-01-05
 
 # required:
-# rtg version: v3.4 build 75c3e66 (2014-12-23)
-# Picard Version (broad build): 1.127
+# rtg version: Product: RTG Core 3.4.1 Non-Commercial
+#  Core Version: v3.4.1 build 0115607 (2015-01-23)
+# previous: v3.4.1 build 75c3e66 (2014-12-23)
+# Picard Version (broad build): 1.128
 
 # report run duration
 starttime=$(date +%s)
@@ -32,7 +34,7 @@ fq2=${infolder}/${f}_2_2.fq.gz
 # marking secondary hits with -M to comply with Picard
 # using 'nthr' processors in parallel (again limited by our RAM!)
 # mem is more demanding and needs more than 3Gb per thread
-nthr=8
+nthr=24
 maxmem="48G"
 
 rgstring="@RG\tID:NA18507\tSM:GAIIx-chr21-RTG\tPL:ILLUMINA"
@@ -92,8 +94,6 @@ cmd="rtg RTG_MEM=${maxmem} map \
 	-l ${fq1} \
 	-r ${fq2} \
 	--read-names \
-	--no-unmapped \
-	--no-unmated \
 	-a 1 \
 	-b 1 \
 	-c 1 \
@@ -174,7 +174,8 @@ eval ${cmd}
 cmd="java -Xmx${maxmem} -jar $PICARD/picard.jar QualityScoreDistribution \
 	CHART=${outfolder}/QS_distribution.pdf \
 	I=${outfolder}/${chr}_rtg-mappings.bam \
-	O=${outfolder}/${chr}_rtg-mapping_QS.txt"
+	O=${outfolder}/${chr}_rtg-mapping_QS.txt\
+	VALIDATION_STRINGENCY=LENIENT" 
 
 echo
 echo "# ${cmd}"
