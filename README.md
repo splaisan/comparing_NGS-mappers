@@ -15,7 +15,7 @@ This repo presents two folders for
 
 Related work can be found in many places, please find here a starter
 
-* (http://www.ecseq.com/support/benchmark)[Benchmark A comparison of different NGS read mappers]
+* <a href="http://www.ecseq.com/support/benchmark">Benchmark A comparison of different NGS read mappers</a>
 
 <h4>Please send comments and feedback to <a href="mailto:bits@vib.be">bits@vib.be</a></h4>
 
