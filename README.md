@@ -13,6 +13,10 @@ This repo presents two folders for
 * [scripts](scripts): code relative to the unix command-line manipulation of the reads (QC, mapping, post-processing, ...)
 * [R-scripts](R-scripts):  the R/bioconductor analysis of the gene counts obtained from the mapping of the reads (EdgeR, Deseq2, RobiNA, ...)
 
+Related work can be found in many places, please find here a starter
+
+* (http://www.ecseq.com/support/benchmark)[Benchmark A comparison of different NGS read mappers]
+
 <h4>Please send comments and feedback to <a href="mailto:bits@vib.be">bits@vib.be</a></h4>
 
 ------------
